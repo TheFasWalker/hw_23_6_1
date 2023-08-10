@@ -5,13 +5,13 @@ from extensions import ConvertionException, ValuteConverter
 bot = telebot.TeleBot(TOKEN)
 
 
-@bot.message_handler(commands=['start', 'help', 'valutes'])
+@bot.message_handler(commands=['start', 'help', 'values'])
 def help_function(message: telebot.types.Message):
     if message.text == '/start':
         text = 'Бот для конвертации валюты.\n Все вычисления основываются на информации с портала https://www.cryptocompare.com/'
     elif message.text == '/help':
-        text = 'Как работать с ботом : \n Узнать список валют /valutes \n для произведения манипуляций с валятами введите клманду в формате \n <имя валюты><В какую валюту переводим><Количество переводимой валюты> '
-    elif message.text == '/valutes':
+        text = 'Как работать с ботом : \n Узнать список валют /values \n для произведения манипуляций с валятами введите клманду в формате \n <имя валюты><В какую валюту переводим><Количество переводимой валюты> '
+    elif message.text == '/values':
         text = 'Доступные валюты:'
         for key in keys.keys():
             text = '\n'.join((text, key))
