@@ -7,3 +7,4 @@
 Пакеты которые используются в данном боте:\
 `json, pytelegrambotapi, requests`
 
+bot link https://t.me/FIrtsFastNoobeeBot_bot
